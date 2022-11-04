@@ -1,44 +1,67 @@
-*This repository acts as a template for all of Oracle’s GitHub repositories. It contains information about the guidelines for those repositories. All files and sections contained in this template are mandatory, and a GitHub app ensures alignment with these guidelines. To get started with a new repository, replace the italic paragraphs with the respective text for your project.*
+# About React Native Image Gallery Sample
 
-# Project name
+This repository holds the sample source code for a
+[React Native](https://reactnative.dev) implementation of an image gallery app powered
+by Oracle Content Management.
 
-*Describe your project's features, functionality and target audience*
+Please follow the [tutorial](https://www.oracle.com/pls/topic/lookup?ctx=cloud&id=oce-reactnative-gallery-sample).
 
-## Installation
+## Prerequisites
 
-*Provide detailed step-by-step installation instructions*
+You must [set up an environment](https://reactnative.dev/docs/environment-setup)
+for React Native development before building this project.  Our project and
+instructions assume you are using the React Native CLI.
 
-## Documentation
+## Running the project
 
-*Developer-oriented documentation can be published on GitHub, but all product documentation must be published on <https://docs.oracle.com>*
+After cloning this repository, run the following command to install the dependencies:
 
-## Examples
+```shell
+npm install
+```
 
-*Describe any included examples or provide a link to a demo/tutorial*
+Generate the basic React Native application:
 
-## Help
+```shell
+npx react-native init OCMGallery
+```
 
-*Inform users on where to get help or how to receive official support from Oracle (if applicable)*
+Run the init command to merge our code into the app:
+
+```shell
+npm run init
+```
+
+Now run either of the build scripts depending on your platform:
+
+```shell
+npm run android
+```
+
+```shell
+npm run ios
+```
+
+## Images
+
+Sample images may be downloaded from
+[https://www.oracle.com/middleware/technologies/content-experience-downloads.html](https://www.oracle.com/middleware/technologies/content-experience-downloads.html)
+under a separate license. These images are provided for reference purposes only and
+may not be hosted or redistributed by you.
 
 ## Contributing
 
-*If your project has specific contribution requirements, update the CONTRIBUTING.md file to ensure those requirements are clearly explained*
-
-This project welcomes contributions from the community. Before submitting a pull request, please [review our contribution guide](./CONTRIBUTING.md)
+This project welcomes contributions from the community. Before submitting a pull
+request, please [review our contribution guide](./CONTRIBUTING.md).
 
 ## Security
 
-Please consult the [security guide](./SECURITY.md) for our responsible security vulnerability disclosure process
+Please consult the [security guide](./SECURITY.md) for our responsible security
+vulnerability disclosure process.
 
 ## License
 
-*The correct copyright notice format for both documentation and software is*
-    "Copyright (c) [year,] year Oracle and/or its affiliates."
-*You must include the year the content was first released (on any platform) and the most recent year in which it was revised*
-
-Copyright (c) 2022 Oracle and/or its affiliates.
-
-*Replace this statement if your project is not licensed under the UPL*
+Copyright (c) 2022, Oracle and/or its affiliates.
 
 Released under the Universal Permissive License v1.0 as shown at
 <https://oss.oracle.com/licenses/upl/>.

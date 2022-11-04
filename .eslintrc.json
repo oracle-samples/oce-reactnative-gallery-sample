@@ -1,0 +1,50 @@
+{
+  "env": {
+    "react-native/react-native": true,
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react-native/all",
+    "plugin:react/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    // `.jsx` extension cannot be used with React Native
+    //"ecmaFeatures": {
+    //  "jsx": true
+    //},
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "header",
+    "react",
+    "react-native"
+  ],
+  "rules": {
+    "no-console": "off",
+    // `.jsx` extension cannot be used with React Native
+    // https://github.com/airbnb/javascript/issues/982
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]      ,
+    // Stop eslint complaining if i have elements on diff lines
+    // https://github.com/Intellicode/eslint-plugin-react-native/issues/210
+    "react-native/no-raw-text": "off",
+    "header/header": [
+      2,
+      "block",
+      [
+        "*",
+        {
+          "pattern": " \\* Copyright \\(c\\) 2022, (\\d{4}, )?Oracle and/or its affiliates\\."
+        },
+        " * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl/",
+        " "
+      ]
+    ]
+  }
+}

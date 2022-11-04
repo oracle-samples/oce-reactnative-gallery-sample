@@ -1,0 +1,49 @@
+{
+  "name": "ocmgallery",
+  "version": "22.11.1",
+  "description": "A simple image gallery app built using React Native and Oracle Content Management.",
+  "author": "Oracle America, Inc.",
+  "license": "UPL-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oracle-samples/oce-reactnative-gallery-sample.git"
+  },
+  "scripts": {
+    "init": "node ./setup/ocm.merge.mjs OCMGallery",
+    "reset": "rm package-lock.json && rm -rf node_modules && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-map-* && npm install",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "lint": "eslint ./*.js ./src --ext .js && markdownlint-cli2 *.md"
+  },
+  "dependencies": {
+    "react": "~18.1.0",
+    "react-native": "~0.70.2",
+    "@react-navigation/native": "~6.0.13",
+    "@react-navigation/stack": "~6.3.0",
+    "prop-types": "~15.8.1",
+    "react-dom": "~18.1.0",
+    "react-native-gesture-handler": "~2.6.1",
+    "react-native-masonry-list": "~2.16.1",
+    "react-native-material-menu": "~2.0.0",
+    "react-native-safe-area-context": "~4.3.3",
+    "react-native-screens": "~3.17.0",
+    "react-native-swiper": "~1.6.0",
+    "react-native-web": "~0.18.9"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.12.9",
+    "@babel/runtime": "~7.12.5",
+    "@react-native-community/eslint-config": "~2.0.0",
+    "babel-jest": "~26.6.3",
+    "eslint": "~7.32.0",
+    "jest": "~26.6.3",
+    "metro-react-native-babel-preset": "~0.72.1",
+    "react-test-renderer": "18.1.0",
+    "eslint-config-airbnb": "~19.0.4",
+    "eslint-plugin-header": "~3.1.1",
+    "fs-extra": "~10.1.0",
+    "markdownlint": "~0.26.2",
+    "markdownlint-cli2": "~0.5.1"
+  }
+}
