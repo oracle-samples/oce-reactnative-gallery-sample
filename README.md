@@ -12,7 +12,7 @@ You must [set up an environment](https://reactnative.dev/docs/environment-setup)
 for React Native development before building this project.  Our project and
 instructions assume you are using the React Native CLI.
 
-## Running the project
+## How to run
 
 After cloning this repository, run the following command to install the dependencies:
 
@@ -61,7 +61,7 @@ vulnerability disclosure process.
 
 ## License
 
-Copyright (c) 2022, Oracle and/or its affiliates.
+Copyright (c) 2022, 2023 Oracle and/or its affiliates.
 
 Released under the Universal Permissive License v1.0 as shown at
 <https://oss.oracle.com/licenses/upl/>.
